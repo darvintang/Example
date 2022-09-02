@@ -1,0 +1,21 @@
+[submodule "DVTFoundation"]
+	path = DVTFoundation
+	url = https://github.com/darvintang/DVTFoundation
+[submodule "DVTLoger"]
+	path = DVTLoger
+	url = https://github.com/darvintang/DVTLoger
+[submodule "DVTNetwork"]
+	path = DVTNetwork
+	url = https://github.com/darvintang/DVTNetwork
+[submodule "DVTObjectMapper"]
+	path = DVTObjectMapper
+	url = https://github.com/darvintang/DVTObjectMapper
+[submodule "DVTScan"]
+	path = DVTScan
+	url = https://github.com/darvintang/DVTScan
+[submodule "DVTSecurity"]
+	path = DVTSecurity
+	url = https://github.com/darvintang/DVTSecurity
+[submodule "DVTUIKit"]
+	path = DVTUIKit
+	url = https://github.com/darvintang/DVTUIKit

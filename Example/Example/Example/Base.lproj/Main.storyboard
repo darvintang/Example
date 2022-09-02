@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21219" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zwO-RI-jmp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zwO-RI-jmp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21200"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,14 +33,35 @@
                                     <action selector="clickPresentScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lEc-jW-MKE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYv-A1-wXZ" userLabel="progress">
+                                <rect key="frame" x="65.5" y="171" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="进度条"/>
+                                <connections>
+                                    <action selector="clickProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5x4-Iq-SRZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnh-fw-E77" userLabel="progress">
+                                <rect key="frame" x="281" y="171" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="按扭"/>
+                                <connections>
+                                    <action selector="clickButto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0LX-U9-xnC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WbG-mf-N6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Oxh-72-Xb3"/>
+                            <constraint firstItem="fnh-fw-E77" firstAttribute="centerX" secondItem="Kru-31-Cad" secondAttribute="centerX" id="Tei-0b-EkF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYv-A1-wXZ" secondAttribute="trailing" symbolic="YES" id="XMc-ab-san"/>
                             <constraint firstItem="Kru-31-Cad" firstAttribute="centerY" secondItem="WbG-mf-N6g" secondAttribute="centerY" id="Yg4-13-wkT"/>
                             <constraint firstItem="WbG-mf-N6g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="Ygt-Z1-7rC"/>
                             <constraint firstItem="Kru-31-Cad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="bKO-Bb-N7P"/>
+                            <constraint firstItem="fnh-fw-E77" firstAttribute="centerY" secondItem="wYv-A1-wXZ" secondAttribute="centerY" id="h8o-NL-5hm"/>
+                            <constraint firstItem="wYv-A1-wXZ" firstAttribute="centerX" secondItem="WbG-mf-N6g" secondAttribute="centerX" id="hXL-Tt-D6Q"/>
+                            <constraint firstItem="wYv-A1-wXZ" firstAttribute="top" secondItem="WbG-mf-N6g" secondAttribute="bottom" constant="32" id="y0X-jl-mXd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="psX-uN-6ej"/>
@@ -52,7 +73,7 @@
         <!--Navigation Controller-->
         <scene sceneID="E6f-mU-Tin">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zwO-RI-jmp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zwO-RI-jmp" customClass="ENavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2J3-qJ-gWl">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>

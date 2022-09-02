@@ -14,6 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Loger.info(KeyChain.default.UDIDString)
+
+        Loger.info("info", 100)
+        Loger.debug("debug", 101)
+        Loger.warning("warning", 102)
+        Loger.error("error", 103)
+
         return true
     }
 
