@@ -15,11 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Loger.info(KeyChain.default.UDIDString)
 
-        Loger.info("info", 100)
-        Loger.debug("debug", 101)
+        Loger.debug("debug", 100)
+        Loger.info("info", 101)
         Loger.warning("warning", 102)
         Loger.error("error", 103)
 
+        DispatchQueue.main.async {
+            Loger.info(CGFloat.dvt.navigationBarHeight)
+            Loger.info(CGFloat.dvt.safeBottomHeight)
+        }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) { _, _ in
+        }
+        UNUserNotificationCenter.current().delegate = self
         return true
     }
 
@@ -35,5 +42,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    // App处于前台时收到通知
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        if #available(iOS 14.0, *) {
+            completionHandler([.banner, .list])
+        } else {
+            completionHandler([.alert])
+        }
+    }
+
+    // 触发通知动作时回调
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
     }
 }

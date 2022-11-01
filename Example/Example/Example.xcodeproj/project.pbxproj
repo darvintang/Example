@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5729332A28A11E5800501B30 /* QMUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5729332928A11E5800501B30 /* QMUIKit.framework */; };
-		5729332B28A11E5800501B30 /* QMUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5729332928A11E5800501B30 /* QMUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5729332E28A1235B00501B30 /* ENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729332D28A1235B00501B30 /* ENavigationController.swift */; };
 		5729333028A124F500501B30 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729332F28A124F500501B30 /* EViewController.swift */; };
 		575AA4E228AA1AAF00CBF1A2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AA4E128AA1AAF00CBF1A2 /* ProgressViewController.swift */; };
@@ -19,9 +17,11 @@
 		575AA60728AA6F1600CBF1A2 /* DVTNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 575AA60628AA6F1600CBF1A2 /* DVTNetwork */; };
 		575AA60928AA6F1600CBF1A2 /* DVTUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 575AA60828AA6F1600CBF1A2 /* DVTUIKit */; };
 		575AA60B28AA6F1600CBF1A2 /* DVTScan in Frameworks */ = {isa = PBXBuildFile; productRef = 575AA60A28AA6F1600CBF1A2 /* DVTScan */; };
-		575AA60D28AA6F1600CBF1A2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 575AA60C28AA6F1600CBF1A2 /* SnapKit */; };
 		579EE16428C1986B000BACBE /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EE16328C1986B000BACBE /* ButtonViewController.swift */; };
+		57A96C4928E5887400BBFB84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A96C4828E5887400BBFB84 /* main.swift */; };
 		57D26E58289D0E9D0019A1A7 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */; };
+		57D403ED28FBE4A80079EDBC /* DVTFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 57D403EC28FBE4A80079EDBC /* DVTFoundation */; };
+		57F1753028C987D200E2D884 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 57F1752F28C987D200E2D884 /* SnapKit */; };
 		5EBA4BCF26F8C48B0038005B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BCE26F8C48B0038005B /* AppDelegate.swift */; };
 		5EBA4BD126F8C48B0038005B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD026F8C48B0038005B /* SceneDelegate.swift */; };
 		5EBA4BD326F8C48B0038005B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD226F8C48B0038005B /* ViewController.swift */; };
@@ -32,23 +32,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		57BDE0CC2748A104008007FF /* Embed Frameworks */ = {
+		57A96C4428E5887400BBFB84 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
 			files = (
-				5729332B28A11E5800501B30 /* QMUIKit.framework in Embed Frameworks */,
 			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		53059A8B203B4414BE47B05A /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5717FB26283CC551007C236C /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		5729332928A11E5800501B30 /* QMUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QMUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5729332D28A1235B00501B30 /* ENavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENavigationController.swift; sourceTree = "<group>"; };
 		5729332F28A124F500501B30 /* EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
 		574C4204289A86EA00B33C63 /* DVTUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DVTUIKit; path = ../../DVTUIKit; sourceTree = "<group>"; };
@@ -59,6 +55,8 @@
 		575AA4E128AA1AAF00CBF1A2 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		579EE16328C1986B000BACBE /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		57A28F79289BA2DC001BBAFC /* DVTSecurity */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DVTSecurity; path = ../../DVTSecurity; sourceTree = "<group>"; };
+		57A96C4628E5887400BBFB84 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A96C4828E5887400BBFB84 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		57D26E59289E26B70019A1A7 /* DVTScan */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DVTScan; path = ../../DVTScan; sourceTree = "<group>"; };
 		57EE097F287E96900099BA46 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
@@ -74,19 +72,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		57A96C4328E5887400BBFB84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D403ED28FBE4A80079EDBC /* DVTFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EBA4BC826F8C48B0038005B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5729332A28A11E5800501B30 /* QMUIKit.framework in Frameworks */,
 				575AA60728AA6F1600CBF1A2 /* DVTNetwork in Frameworks */,
 				575AA60528AA6F1600CBF1A2 /* DVTSecurity in Frameworks */,
 				575AA60928AA6F1600CBF1A2 /* DVTUIKit in Frameworks */,
 				575AA60128AA6F1600CBF1A2 /* DVTObjectMapper in Frameworks */,
 				575AA60328AA6F1600CBF1A2 /* DVTLoger in Frameworks */,
+				57F1753028C987D200E2D884 /* SnapKit in Frameworks */,
 				575AA5FF28AA6F1600CBF1A2 /* DVTFoundation in Frameworks */,
 				575AA60B28AA6F1600CBF1A2 /* DVTScan in Frameworks */,
-				575AA60D28AA6F1600CBF1A2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,11 +131,17 @@
 			path = Ex;
 			sourceTree = "<group>";
 		};
-		57C3F1B727D9E93C0010DF1F /* Frameworks */ = {
+		57A96C4728E5887400BBFB84 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				5729332928A11E5800501B30 /* QMUIKit.framework */,
-				53059A8B203B4414BE47B05A /* Pods_Example.framework */,
+				57A96C4828E5887400BBFB84 /* main.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		57D403EB28FBE4A80079EDBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,8 +153,9 @@
 				5717FB26283CC551007C236C /* Example.playground */,
 				5EBA4BE826F8C5570038005B /* Dastower.gpx */,
 				5EBA4BCD26F8C48B0038005B /* Example */,
+				57A96C4728E5887400BBFB84 /* Test */,
 				5EBA4BCC26F8C48B0038005B /* Products */,
-				57C3F1B727D9E93C0010DF1F /* Frameworks */,
+				57D403EB28FBE4A80079EDBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				5EBA4BCB26F8C48B0038005B /* Example.app */,
+				57A96C4628E5887400BBFB84 /* Test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +188,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		57A96C4528E5887400BBFB84 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57A96C4C28E5887400BBFB84 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				57A96C4228E5887400BBFB84 /* Sources */,
+				57A96C4328E5887400BBFB84 /* Frameworks */,
+				57A96C4428E5887400BBFB84 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			packageProductDependencies = (
+				57D403EC28FBE4A80079EDBC /* DVTFoundation */,
+			);
+			productName = Test;
+			productReference = 57A96C4628E5887400BBFB84 /* Test */;
+			productType = "com.apple.product-type.tool";
+		};
 		5EBA4BCA26F8C48B0038005B /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBA4BDF26F8C48D0038005B /* Build configuration list for PBXNativeTarget "Example" */;
@@ -182,7 +215,6 @@
 				5EBA4BC726F8C48B0038005B /* Sources */,
 				5EBA4BC826F8C48B0038005B /* Frameworks */,
 				5EBA4BC926F8C48B0038005B /* Resources */,
-				57BDE0CC2748A104008007FF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +229,7 @@
 				575AA60628AA6F1600CBF1A2 /* DVTNetwork */,
 				575AA60828AA6F1600CBF1A2 /* DVTUIKit */,
 				575AA60A28AA6F1600CBF1A2 /* DVTScan */,
-				575AA60C28AA6F1600CBF1A2 /* SnapKit */,
+				57F1752F28C987D200E2D884 /* SnapKit */,
 			);
 			productName = Example;
 			productReference = 5EBA4BCB26F8C48B0038005B /* Example.app */;
@@ -211,10 +243,13 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				CLASSPREFIX = DVT;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = cn.tcoding.dvt;
 				TargetAttributes = {
+					57A96C4528E5887400BBFB84 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					5EBA4BCA26F8C48B0038005B = {
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
@@ -238,13 +273,14 @@
 				57EFD7D9289F121E008C4F67 /* XCRemoteSwiftPackageReference "DVTNetwork" */,
 				57EFD7DC289F122F008C4F67 /* XCRemoteSwiftPackageReference "DVTUIKit" */,
 				57EFD7DF289F124A008C4F67 /* XCRemoteSwiftPackageReference "DVTScan" */,
-				575AA4E528AA228F00CBF1A2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				57F1752E28C987D200E2D884 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 5EBA4BCC26F8C48B0038005B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5EBA4BCA26F8C48B0038005B /* Example */,
+				57A96C4528E5887400BBFB84 /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +300,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		57A96C4228E5887400BBFB84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A96C4928E5887400BBFB84 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EBA4BC726F8C48B0038005B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +337,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		57A96C4A28E5887400BBFB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		57A96C4B28E5887400BBFB84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		5EBA4BDD26F8C48D0038005B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -497,6 +571,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		57A96C4C28E5887400BBFB84 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A96C4A28E5887400BBFB84 /* Debug */,
+				57A96C4B28E5887400BBFB84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5EBA4BC626F8C48B0038005B /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -518,14 +601,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		575AA4E528AA228F00CBF1A2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		57EFD7CD289F0CF4008C4F67 /* XCRemoteSwiftPackageReference "DVTFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/darvintang/DVTFoundation";
@@ -582,6 +657,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		57F1752E28C987D200E2D884 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -620,9 +703,13 @@
 			package = 57EFD7DF289F124A008C4F67 /* XCRemoteSwiftPackageReference "DVTScan" */;
 			productName = DVTScan;
 		};
-		575AA60C28AA6F1600CBF1A2 /* SnapKit */ = {
+		57D403EC28FBE4A80079EDBC /* DVTFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 575AA4E528AA228F00CBF1A2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = DVTFoundation;
+		};
+		57F1752F28C987D200E2D884 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F1752E28C987D200E2D884 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

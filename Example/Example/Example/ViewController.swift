@@ -28,7 +28,23 @@ class ViewController: EViewController {
         self.navigationController?.pushViewController(ProgressViewController(), animated: true)
     }
 
-    @IBAction func clickButto(_ sender: UIButton) {
-        self.navigationController?.pushViewController(ButtonViewController(), animated: true)
+    @IBAction func clickButton(_ sender: UIButton) {
+//        let center = UNUserNotificationCenter.current()
+//
+//        let content = UNMutableNotificationContent()
+//        content.title = "测试标题"
+//        content.subtitle = "测试通知副标题"
+//        content.body = "测试通知的具体内容"
+//        content.badge = 1
+//        let time = Date(timeIntervalSinceNow: 3).timeIntervalSinceNow
+//        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: time, repeats: false)
+//        let identifier = "noticeId"
+//        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+//
+//        center.add(request)
+
+        UIWindowScene.main?.dvt.rotate(to: .landscapeRight)
+
+//        self.navigationController?.pushViewController(ButtonViewController(), animated: true)
     }
 }
