@@ -1,0 +1,84 @@
+PODS:
+  - Alamofire (5.6.4)
+  - DVTFoundation (2.0.4)
+  - DVTLoger (2.0.2):
+    - Zip (~> 2.1.2)
+  - DVTNetwork (2.0.3):
+    - Alamofire (~> 5.6.0)
+    - DVTLoger (~> 2.0.0)
+  - DVTObjectMapper (14.0.0)
+  - DVTScan (2.1.0):
+    - DVTUIKit/Extension (~> 2.1.0)
+  - DVTSecurity (2.0.1)
+  - DVTUIKit (2.1.0):
+    - DVTUIKit/Advanced (= 2.1.0)
+    - DVTUIKit/Extension (= 2.1.0)
+  - DVTUIKit/Advanced (2.1.0):
+    - DVTUIKit/Advanced/Button (= 2.1.0)
+    - DVTUIKit/Advanced/Collection (= 2.1.0)
+    - DVTUIKit/Advanced/Navigation (= 2.1.0)
+    - DVTUIKit/Advanced/ProgressView (= 2.1.0)
+    - DVTUIKit/Advanced/Public (= 2.1.0)
+  - DVTUIKit/Advanced/Button (2.1.0):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Collection (2.1.0):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Navigation (2.1.0):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/ProgressView (2.1.0):
+    - DVTUIKit/Advanced/Public
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Public (2.1.0)
+  - DVTUIKit/Extension (2.1.0):
+    - DVTFoundation
+    - DVTLoger
+  - SnapKit (5.6.0)
+  - Zip (2.1.2)
+
+DEPENDENCIES:
+  - DVTFoundation (from `../DVTFoundation`)
+  - DVTLoger (from `../DVTLoger`)
+  - DVTNetwork (from `../DVTNetwork`)
+  - DVTObjectMapper (from `../DVTObjectMapper`)
+  - DVTScan (from `../DVTScan`)
+  - DVTSecurity (from `../DVTSecurity`)
+  - DVTUIKit (from `../DVTUIKit`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SnapKit
+    - Zip
+
+EXTERNAL SOURCES:
+  DVTFoundation:
+    :path: "../DVTFoundation"
+  DVTLoger:
+    :path: "../DVTLoger"
+  DVTNetwork:
+    :path: "../DVTNetwork"
+  DVTObjectMapper:
+    :path: "../DVTObjectMapper"
+  DVTScan:
+    :path: "../DVTScan"
+  DVTSecurity:
+    :path: "../DVTSecurity"
+  DVTUIKit:
+    :path: "../DVTUIKit"
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  DVTFoundation: dbdf163aafcc776fbf7d19dc36373c2527b840e3
+  DVTLoger: 621a04d65bc9cb0976f303aaa17a34900d8499f5
+  DVTNetwork: c7897a183b8cca27c74efbb7a35d6eb8edf02133
+  DVTObjectMapper: 0eee5f062d02b246b338917cb4796fece539e8cc
+  DVTScan: bbab396eef41833e3b8e38b7b08a805543cc8d18
+  DVTSecurity: dc3556dfd93ad18fef1582d1a5595608449f7921
+  DVTUIKit: f45222548417c15de2635e3bafe39cc60318ba4f
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
+
+PODFILE CHECKSUM: 428a28fa877cb1f44b8c9fbbe81bccf50d900849
+
+COCOAPODS: 1.11.3

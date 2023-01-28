@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zwO-RI-jmp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbG-mf-N6g">
+                                <rect key="frame" x="54" y="104" width="99.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="pushScan"/>
+                                <connections>
+                                    <action selector="clickPushScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="StK-z0-zKu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kru-31-Cad">
+                                <rect key="frame" x="250.5" y="104" width="120" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="presentScan"/>
+                                <connections>
+                                    <action selector="clickPresentScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lEc-jW-MKE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYv-A1-wXZ" userLabel="progress">
+                                <rect key="frame" x="65.5" y="171" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="进度条"/>
+                                <connections>
+                                    <action selector="clickProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5x4-Iq-SRZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnh-fw-E77" userLabel="progress">
+                                <rect key="frame" x="281" y="171" width="59" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="按扭"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XkE-Cd-acp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnO-Gw-KD9">
+                                <rect key="frame" x="56.5" y="238" width="94" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="车牌键盘"/>
+                                <connections>
+                                    <action selector="clickKeyboardBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dov-pw-yo6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szR-fs-eVU">
+                                <rect key="frame" x="272.5" y="238" width="76" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="导航栏"/>
+                                <connections>
+                                    <action selector="clickNavBar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SHr-va-U1i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="szR-fs-eVU" firstAttribute="centerX" secondItem="fnh-fw-E77" secondAttribute="centerX" id="25T-5q-kzf"/>
+                            <constraint firstItem="GnO-Gw-KD9" firstAttribute="centerX" secondItem="wYv-A1-wXZ" secondAttribute="centerX" id="5OH-0N-Sgj"/>
+                            <constraint firstItem="szR-fs-eVU" firstAttribute="centerY" secondItem="GnO-Gw-KD9" secondAttribute="centerY" id="AQG-Xc-mjt"/>
+                            <constraint firstItem="WbG-mf-N6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Oxh-72-Xb3"/>
+                            <constraint firstItem="fnh-fw-E77" firstAttribute="centerX" secondItem="Kru-31-Cad" secondAttribute="centerX" id="Tei-0b-EkF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wYv-A1-wXZ" secondAttribute="trailing" symbolic="YES" id="XMc-ab-san"/>
+                            <constraint firstItem="Kru-31-Cad" firstAttribute="centerY" secondItem="WbG-mf-N6g" secondAttribute="centerY" id="Yg4-13-wkT"/>
+                            <constraint firstItem="WbG-mf-N6g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="Ygt-Z1-7rC"/>
+                            <constraint firstItem="Kru-31-Cad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="bKO-Bb-N7P"/>
+                            <constraint firstItem="fnh-fw-E77" firstAttribute="centerY" secondItem="wYv-A1-wXZ" secondAttribute="centerY" id="h8o-NL-5hm"/>
+                            <constraint firstItem="wYv-A1-wXZ" firstAttribute="centerX" secondItem="WbG-mf-N6g" secondAttribute="centerX" id="hXL-Tt-D6Q"/>
+                            <constraint firstItem="GnO-Gw-KD9" firstAttribute="top" secondItem="wYv-A1-wXZ" secondAttribute="bottom" constant="32" id="uZP-PA-Ade"/>
+                            <constraint firstItem="wYv-A1-wXZ" firstAttribute="top" secondItem="WbG-mf-N6g" secondAttribute="bottom" constant="32" id="y0X-jl-mXd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="psX-uN-6ej"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.072463768116" y="85.714285714285708"/>
+        </scene>
+        <!--SelfHome-->
+        <scene sceneID="E6f-mU-Tin">
+            <objects>
+                <navigationController title="SelfHome" automaticallyAdjustsScrollViewInsets="NO" id="zwO-RI-jmp" customClass="ENavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Self" id="jnX-vl-AyR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2J3-qJ-gWl" customClass="DVTTransitionNavigationBar" customModule="DVTUIKitNavigation">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TD1-Cv-8sz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nfV-S2-TKx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpA-TO-zr4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
