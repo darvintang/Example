@@ -35,6 +35,8 @@
 		579EE16428C1986B000BACBE /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EE16328C1986B000BACBE /* ButtonViewController.swift */; };
 		57A96C4928E5887400BBFB84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A96C4828E5887400BBFB84 /* main.swift */; };
 		57B408C12936036F004E9921 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B408C02936036F004E9921 /* KeyboardViewController.swift */; };
+		57B46DF3298A523A00802AF6 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B46DF2298A523A00802AF6 /* TipsViewController.swift */; };
+		57B46DF4298A523A00802AF6 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B46DF2298A523A00802AF6 /* TipsViewController.swift */; };
 		57D26E58289D0E9D0019A1A7 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */; };
 		57F389DE296BE67700FAD47F /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F389DD296BE67700FAD47F /* NavBarViewController.swift */; };
 		5EBA4BCF26F8C48B0038005B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BCE26F8C48B0038005B /* AppDelegate.swift */; };
@@ -44,7 +46,6 @@
 		5EBA4BD826F8C48D0038005B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD726F8C48D0038005B /* Assets.xcassets */; };
 		5EBA4BE926F8C5580038005B /* Dastower.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BE826F8C5570038005B /* Dastower.gpx */; };
 		5EBA4BEF26F8C6D40038005B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BEE26F8C6D40038005B /* LaunchScreen.storyboard */; };
-		FD0E33D899E6047774D91C25 /* Pods_ExamplePod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FBCC94F7D0CF052E0DCF9A /* Pods_ExamplePod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +93,7 @@
 		57A96C4628E5887400BBFB84 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A96C4828E5887400BBFB84 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		57B408C02936036F004E9921 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		57B46DF2298A523A00802AF6 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		57EE097F287E96900099BA46 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		57F389DD296BE67700FAD47F /* NavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0E33D899E6047774D91C25 /* Pods_ExamplePod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +176,7 @@
 				579EE16328C1986B000BACBE /* ButtonViewController.swift */,
 				57B408C02936036F004E9921 /* KeyboardViewController.swift */,
 				57F389DD296BE67700FAD47F /* NavBarViewController.swift */,
+				57B46DF2298A523A00802AF6 /* TipsViewController.swift */,
 			);
 			path = Ex;
 			sourceTree = "<group>";
@@ -244,12 +246,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5771F628296DB39700F63C13 /* Build configuration list for PBXNativeTarget "ExamplePod" */;
 			buildPhases = (
-				388693288429C69CD9731132 /* [CP] Check Pods Manifest.lock */,
 				5771F60D296DB39700F63C13 /* Sources */,
 				5771F618296DB39700F63C13 /* Frameworks */,
 				5771F622296DB39700F63C13 /* Resources */,
 				5771F627296DB39700F63C13 /* Embed Foundation Extensions */,
-				5D5A00F9E9DBFEB401DAFA5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,53 +374,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		388693288429C69CD9731132 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ExamplePod-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D5A00F9E9DBFEB401DAFA5E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		5771F60D296DB39700F63C13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B46DF3298A523A00802AF6 /* TipsViewController.swift in Sources */,
 				5771F60E296DB39700F63C13 /* ButtonViewController.swift in Sources */,
 				5771F60F296DB39700F63C13 /* ViewController.swift in Sources */,
 				5771F610296DB39700F63C13 /* AppDelegate.swift in Sources */,
@@ -446,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B46DF4298A523A00802AF6 /* TipsViewController.swift in Sources */,
 				579EE16428C1986B000BACBE /* ButtonViewController.swift in Sources */,
 				5EBA4BD326F8C48B0038005B /* ViewController.swift in Sources */,
 				5EBA4BCF26F8C48B0038005B /* AppDelegate.swift in Sources */,

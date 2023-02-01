@@ -7,6 +7,12 @@
 //
 
 import UIKit
+#if canImport(DVTUIKitPublic)
+    import DVTUIKitPublic
+#endif
+#if canImport(DVTUIKitTips)
+    import DVTUIKitTips
+#endif
 
 class KeyboardViewController: UIViewController {
     lazy var inputBoxView: UITextField = {
@@ -26,6 +32,11 @@ class KeyboardViewController: UIViewController {
     }
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.inputBoxView.endEditing(true)
+//        self.inputBoxView.endEditing(true)
+        DVTTipsView(view: UIActivityIndicatorView(style: .large)).show(superview: self.view)
+    }
+
+    deinit {
+        print(self)
     }
 }

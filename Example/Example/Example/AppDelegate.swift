@@ -7,8 +7,12 @@
 
 import DVTLoger
 import DVTSecurity
-import DVTUIKitNavigation
 import UIKit
+
+#if canImport(DVTUIKitNavigation)
+    import DVTUIKitNavigation
+    import DVTUIKitPublic
+#endif
 
 // 日志
 let eLoger = {
@@ -45,6 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         DVTUINavigationBarStyle.default.dvt_navigationBarBackTitle = ""
         DVTUINavigationBarStyle.default.dvt_navigationBarShadowColor = .clear
+        DVTKeyboardManager.default.test()
         return true
     }
 

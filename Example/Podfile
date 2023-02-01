@@ -2,6 +2,7 @@ install! 'cocoapods',
   :generate_multiple_pod_projects => true,
   :incremental_installation => true
 
+workspace 'ExamplePod.xcworkspace'
 project 'Example/Example.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project

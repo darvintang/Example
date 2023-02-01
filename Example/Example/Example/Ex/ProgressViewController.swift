@@ -6,8 +6,8 @@
 //  Copyright © 2022 cn.tcoding.dvt. All rights reserved.
 //
 
-#if canImport(DVTUIKitProgressView)
-    import DVTUIKitProgressView
+#if canImport(DVTUIKitProgress)
+    import DVTUIKitProgress
 #elseif canImport(DVTUIKit)
     import DVTUIKit
 #endif
