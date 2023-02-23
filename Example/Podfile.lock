@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.6.4)
-  - DVTFoundation (2.0.5)
+  - DVTFoundation (2.0.6)
   - DVTLoger (2.0.3):
     - Zip (~> 2.1.2)
   - DVTNetwork (2.0.3):
@@ -10,27 +10,43 @@ PODS:
   - DVTScan (2.1.0):
     - DVTUIKit/Extension (~> 2.1.0)
   - DVTSecurity (2.0.1)
-  - DVTUIKit (2.1.0):
-    - DVTUIKit/Advanced (= 2.1.0)
-    - DVTUIKit/Extension (= 2.1.0)
-  - DVTUIKit/Advanced (2.1.0):
-    - DVTUIKit/Advanced/Button (= 2.1.0)
-    - DVTUIKit/Advanced/Collection (= 2.1.0)
-    - DVTUIKit/Advanced/Navigation (= 2.1.0)
-    - DVTUIKit/Advanced/ProgressView (= 2.1.0)
-    - DVTUIKit/Advanced/Public (= 2.1.0)
-  - DVTUIKit/Advanced/Button (2.1.0):
+  - DVTUIKit (2.1.2):
+    - DVTUIKit/Advanced (= 2.1.2)
+    - DVTUIKit/Extension (= 2.1.2)
+  - DVTUIKit/Advanced (2.1.2):
+    - DVTUIKit/Advanced/Button (= 2.1.2)
+    - DVTUIKit/Advanced/Collection (= 2.1.2)
+    - DVTUIKit/Advanced/EmptyView (= 2.1.2)
+    - DVTUIKit/Advanced/Label (= 2.1.2)
+    - DVTUIKit/Advanced/Navigation (= 2.1.2)
+    - DVTUIKit/Advanced/Progress (= 2.1.2)
+    - DVTUIKit/Advanced/Public (= 2.1.2)
+    - DVTUIKit/Advanced/TextField (= 2.1.2)
+    - DVTUIKit/Advanced/TextView (= 2.1.2)
+    - DVTUIKit/Advanced/Tips (= 2.1.2)
+  - DVTUIKit/Advanced/Button (2.1.2):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Collection (2.1.0):
+  - DVTUIKit/Advanced/Collection (2.1.2):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Navigation (2.1.0):
+  - DVTUIKit/Advanced/EmptyView (2.1.2):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/ProgressView (2.1.0):
+  - DVTUIKit/Advanced/Label (2.1.2):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Navigation (2.1.2):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Progress (2.1.2):
     - DVTUIKit/Advanced/Public
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Public (2.1.0)
-  - DVTUIKit/Extension (2.1.0):
-    - DVTFoundation (~> 2.0.5)
+  - DVTUIKit/Advanced/Public (2.1.2)
+  - DVTUIKit/Advanced/TextField (2.1.2):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/TextView (2.1.2):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Tips (2.1.2):
+    - DVTUIKit/Advanced/Public
+    - DVTUIKit/Extension
+  - DVTUIKit/Extension (2.1.2):
+    - DVTFoundation (~> 2.0.6)
     - DVTLoger
   - SnapKit (5.6.0)
   - Zip (2.1.2)
@@ -69,16 +85,16 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  DVTFoundation: ef9d0bf48d33a1b4bdd7412e7039d65db845361f
+  DVTFoundation: 6002f0290037246089e18477c2867ec8c8d1a378
   DVTLoger: 8228829e5b8ca08c49bcfcbc5d0ba5500a5dcf06
   DVTNetwork: c7897a183b8cca27c74efbb7a35d6eb8edf02133
   DVTObjectMapper: 0eee5f062d02b246b338917cb4796fece539e8cc
   DVTScan: bbab396eef41833e3b8e38b7b08a805543cc8d18
   DVTSecurity: dc3556dfd93ad18fef1582d1a5595608449f7921
-  DVTUIKit: b5a1dabee92c19abe751bb717ed419bedb18d0c6
+  DVTUIKit: 5115b344c79f6add355e505443ee0a622fc4ac4e
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 7eadc2eea77e0317e1a36a8c7ea090eb4547e135
+PODFILE CHECKSUM: 0567bde6379291867bc66ee1c42d203674b99a9b
 
 COCOAPODS: 1.11.3

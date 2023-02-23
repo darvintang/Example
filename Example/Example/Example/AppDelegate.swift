@@ -9,9 +9,13 @@ import DVTLoger
 import DVTSecurity
 import UIKit
 
-#if canImport(DVTUIKitNavigation)
-    import DVTUIKitNavigation
-    import DVTUIKitPublic
+import MatterSupport
+
+import DVTUIKit
+
+#if canImport(DVTUIKit_Navigation)
+    import DVTUIKit_Navigation
+    import DVTUIKit_Public
 #endif
 
 // 日志
@@ -29,27 +33,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-        eLoger.info(KeyChain.UDIDString)
-
-        eLoger.debug("debug", 100)
-        eLoger.info("info", 101)
-        eLoger.warning("warning", 102)
-        eLoger.error("error", 103)
-
-        DispatchQueue.main.async {
-            eLoger.info(CGFloat.dvt.navigationBarHeight)
-            eLoger.info(CGFloat.dvt.safeBottomHeight)
-        }
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) { _, _ in
-        }
-        NotificationCenter.default.addObserver(forName: UIApplication.protectedDataWillBecomeUnavailableNotification, object: nil, queue: .main) { _ in
-            eLoger.info(KeyChain.UDIDString)
-        }
-        UNUserNotificationCenter.current().delegate = self
-
         DVTUINavigationBarStyle.default.dvt_navigationBarBackTitle = ""
         DVTUINavigationBarStyle.default.dvt_navigationBarShadowColor = .clear
         DVTKeyboardManager.default.test()
+
         return true
     }
 

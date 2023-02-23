@@ -22,7 +22,6 @@
 		5771F60F296DB39700F63C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD226F8C48B0038005B /* ViewController.swift */; };
 		5771F610296DB39700F63C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BCE26F8C48B0038005B /* AppDelegate.swift */; };
 		5771F611296DB39700F63C13 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AA4E128AA1AAF00CBF1A2 /* ProgressViewController.swift */; };
-		5771F612296DB39700F63C13 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B408C02936036F004E9921 /* KeyboardViewController.swift */; };
 		5771F613296DB39700F63C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD026F8C48B0038005B /* SceneDelegate.swift */; };
 		5771F614296DB39700F63C13 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */; };
 		5771F615296DB39700F63C13 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729332F28A124F500501B30 /* EViewController.swift */; };
@@ -34,7 +33,7 @@
 		5771F626296DB39700F63C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD426F8C48B0038005B /* Main.storyboard */; };
 		579EE16428C1986B000BACBE /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579EE16328C1986B000BACBE /* ButtonViewController.swift */; };
 		57A96C4928E5887400BBFB84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A96C4828E5887400BBFB84 /* main.swift */; };
-		57B408C12936036F004E9921 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B408C02936036F004E9921 /* KeyboardViewController.swift */; };
+		57B422A729A7353600A83CAD /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B422A629A7353600A83CAD /* TextViewController.swift */; };
 		57B46DF3298A523A00802AF6 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B46DF2298A523A00802AF6 /* TipsViewController.swift */; };
 		57B46DF4298A523A00802AF6 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B46DF2298A523A00802AF6 /* TipsViewController.swift */; };
 		57D26E58289D0E9D0019A1A7 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */; };
@@ -81,7 +80,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03FBCC94F7D0CF052E0DCF9A /* Pods_ExamplePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamplePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D708A93D17401D53E581F7 /* Pods-ExamplePod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamplePod.release.xcconfig"; path = "Target Support Files/Pods-ExamplePod/Pods-ExamplePod.release.xcconfig"; sourceTree = "<group>"; };
 		5717FB26283CC551007C236C /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5729332D28A1235B00501B30 /* ENavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENavigationController.swift; sourceTree = "<group>"; };
@@ -92,7 +90,7 @@
 		579EE16328C1986B000BACBE /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		57A96C4628E5887400BBFB84 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A96C4828E5887400BBFB84 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		57B408C02936036F004E9921 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		57B422A629A7353600A83CAD /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		57B46DF2298A523A00802AF6 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		57EE097F287E96900099BA46 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
@@ -161,22 +159,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		574C4203289A86EA00B33C63 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		575AA4E328AA1B1600CBF1A2 /* Ex */ = {
 			isa = PBXGroup;
 			children = (
 				575AA4E128AA1AAF00CBF1A2 /* ProgressViewController.swift */,
 				57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */,
 				579EE16328C1986B000BACBE /* ButtonViewController.swift */,
-				57B408C02936036F004E9921 /* KeyboardViewController.swift */,
 				57F389DD296BE67700FAD47F /* NavBarViewController.swift */,
 				57B46DF2298A523A00802AF6 /* TipsViewController.swift */,
+				57B422A629A7353600A83CAD /* TextViewController.swift */,
 			);
 			path = Ex;
 			sourceTree = "<group>";
@@ -193,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				575337B7292F41B700D01B5B /* UniformTypeIdentifiers.framework */,
-				03FBCC94F7D0CF052E0DCF9A /* Pods_ExamplePod.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +195,6 @@
 				5EBA4BCD26F8C48B0038005B /* Example */,
 				5717FB26283CC551007C236C /* Example.playground */,
 				57D403EB28FBE4A80079EDBC /* Frameworks */,
-				574C4203289A86EA00B33C63 /* Packages */,
 				5EBA4BCC26F8C48B0038005B /* Products */,
 				57A96C4728E5887400BBFB84 /* Test */,
 				411F6DF1D8AC4697E133F8CE /* Pods */,
@@ -250,6 +239,8 @@
 				5771F618296DB39700F63C13 /* Frameworks */,
 				5771F622296DB39700F63C13 /* Resources */,
 				5771F627296DB39700F63C13 /* Embed Foundation Extensions */,
+				5730EDF6298BF4D900D89748 /* [CP] Embed Pods Frameworks */,
+				5730EDF9298BF58B00D89748 /* [CP] Check Pods Manifest.lock */,
 			);
 			buildRules = (
 			);
@@ -374,6 +365,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5730EDF6298BF4D900D89748 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5730EDF9298BF58B00D89748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExamplePod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5771F60D296DB39700F63C13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -384,7 +420,6 @@
 				5771F60F296DB39700F63C13 /* ViewController.swift in Sources */,
 				5771F610296DB39700F63C13 /* AppDelegate.swift in Sources */,
 				5771F611296DB39700F63C13 /* ProgressViewController.swift in Sources */,
-				5771F612296DB39700F63C13 /* KeyboardViewController.swift in Sources */,
 				5771F613296DB39700F63C13 /* SceneDelegate.swift in Sources */,
 				5771F614296DB39700F63C13 /* ScanViewController.swift in Sources */,
 				5771F615296DB39700F63C13 /* EViewController.swift in Sources */,
@@ -410,12 +445,12 @@
 				5EBA4BD326F8C48B0038005B /* ViewController.swift in Sources */,
 				5EBA4BCF26F8C48B0038005B /* AppDelegate.swift in Sources */,
 				575AA4E228AA1AAF00CBF1A2 /* ProgressViewController.swift in Sources */,
-				57B408C12936036F004E9921 /* KeyboardViewController.swift in Sources */,
 				5EBA4BD126F8C48B0038005B /* SceneDelegate.swift in Sources */,
 				57D26E58289D0E9D0019A1A7 /* ScanViewController.swift in Sources */,
 				5729333028A124F500501B30 /* EViewController.swift in Sources */,
 				57F389DE296BE67700FAD47F /* NavBarViewController.swift in Sources */,
 				5729332E28A1235B00501B30 /* ENavigationController.swift in Sources */,
+				57B422A729A7353600A83CAD /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

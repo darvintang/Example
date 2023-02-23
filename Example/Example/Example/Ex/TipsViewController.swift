@@ -8,12 +8,12 @@
 
 import UIKit
 
-#if canImport(DVTUIKit)
-    import DVTUIKit
+#if canImport(DVTUIKit_)
+    import DVTUIKit_
 #endif
 
-#if canImport(DVTUIKitTips)
-    import DVTUIKitTips
+#if canImport(DVTUIKit_Tips)
+    import DVTUIKit_Tips
 #endif
 
 class TipsViewController: EViewController {
@@ -87,7 +87,7 @@ class TipsViewController: EViewController {
             make.right.left.equalToSuperview()
         }
         self.loadingView.dvt.addTapGesture { view in
-            view.dvt.showLoading(style: DVTTipsStyle(timeout: 5))
+            view.dvt.showLoading(style: DVTUITipsStyle(timeout: 5))
         }
         self.infoView.dvt.addTapGesture { view in
             view.dvt.showInfo("信息")

@@ -6,10 +6,10 @@
 //  Copyright © 2022 cn.tcoding.dvt. All rights reserved.
 //
 
-#if canImport(DVTUIKitProgress)
-    import DVTUIKitProgress
+#if canImport(DVTUIKit_Progress)
+    import DVTUIKit_Progress
 #elseif canImport(DVTUIKit)
-    import DVTUIKit
+    import DVTUIKit_
 #endif
 
 import SnapKit

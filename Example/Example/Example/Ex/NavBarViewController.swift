@@ -6,8 +6,8 @@
 //  Copyright © 2023 cn.tcoding.dvt. All rights reserved.
 //
 
-#if canImport(DVTUIKitNavigation)
-    import DVTUIKitNavigation
+#if canImport(DVTUIKit_Navigation)
+    import DVTUIKit_Navigation
 #elseif canImport(DVTUIKit)
     import DVTUIKit
 #endif
@@ -51,20 +51,11 @@ class NavBarViewController: EViewController {
         }
         backLabel.frame = CGRect(x: 100, y: .dvt.navigationBarHeight + 160, width: 100, height: 30)
         self.view.addSubview(backLabel)
-        self.view.backgroundColor = UIColor(dvt: 0xDFEDFD)
     }
 
     lazy var count: Int = {
         self.navigationController?.viewControllers.count ?? 0
     }()
-
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let barStyle = self.dvt.navigationBarStyle
-        barStyle?.dvt_navigationBarBackgroundColor = .white
-        barStyle?.dvt_navigationBarShadowImage = UIImage(dvt: .black)
-        self.dvt.setNavigationBarStyle(barStyle)
-        self.dvt.updateNavigationBarAppearance(useDelegate: false)
-    }
 }
 
 extension NavBarViewController: DVTUINavigationControllerDelegate {
@@ -72,15 +63,15 @@ extension NavBarViewController: DVTUINavigationControllerDelegate {
         self.count % 5 == 0
     }
 
-    var dvt_navigationBarBackgroundColor: UIColor? {
-        return [UIColor.red, .blue, .brown, .darkGray, .cyan, .gray][self.count % 6]
-    }
+//    var dvt_navigationBarBackgroundColor: UIColor? {
+//        return [UIColor.red, .blue, .brown, .darkGray, .cyan, .gray][self.count % 6]
+//    }
 
     var dvt_navigationBarBackgroundImage: UIImage? {
         let list = [UIColor.red, .blue, .brown, .darkGray, .cyan, .gray]
         let indexStert = self.count % 6
         let indexEnd = self.count * 2 % 5
-        return UIImage(dvt: [list[indexStert], list[indexEnd]])
+        return UIImage(dvt: [.clear.dvt.alpha(0.1), list[indexStert].dvt.alpha(0.9), .black.dvt.alpha(0.2), list[indexEnd].dvt.alpha(0.9)], size: CGSize(width: .dvt.screenWidth, height: .dvt.navigationBarHeight))
     }
 
     var dvt_navigationBarShadowColor: UIColor? {
@@ -99,9 +90,9 @@ extension NavBarViewController: DVTUINavigationControllerDelegate {
         .white
     }
 
-    var dvt_backImage: UIImage? {
-        UIImage(named: "scan_focus")
-    }
+//    var dvt_backImage: UIImage? {
+//        UIImage(named: "scan_focus")?.dvt.image(blendColors: [.red.dvt.alpha(0.1), .black.dvt.alpha(0.1)])
+//    }
 
     var dvt_navigationBarBackTitle: String? {
         "\(self.count)"

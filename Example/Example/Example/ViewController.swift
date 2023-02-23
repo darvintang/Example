@@ -6,9 +6,12 @@
 //
 
 import DVTUIKit
-import DVTUIKitNavigation
 import SnapKit
 import UIKit
+
+#if canImport(DVTUIKit_Navigation)
+    import DVTUIKit_Navigation
+#endif
 
 class ViewController: EViewController {
     lazy var tableView: UITableView = {
@@ -32,9 +35,6 @@ class ViewController: EViewController {
             "进度条": { [weak self] in
                 self?.navigationController?.pushViewController(ProgressViewController(), animated: true)
             },
-            "键盘": { [weak self] in
-                self?.navigationController?.pushViewController(KeyboardViewController(), animated: true)
-            },
             "导航栏": { [weak self] in
                 self?.navigationController?.pushViewController(NavBarViewController(), animated: true)
             },
@@ -43,6 +43,9 @@ class ViewController: EViewController {
             },
             "提示": { [weak self] in
                 self?.navigationController?.pushViewController(TipsViewController(), animated: true)
+            },
+            "输入框": { [weak self] in
+                self?.navigationController?.pushViewController(TextViewController(), animated: true)
             },
         ]
 
