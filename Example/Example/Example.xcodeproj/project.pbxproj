@@ -10,6 +10,7 @@
 		5729332E28A1235B00501B30 /* ENavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729332D28A1235B00501B30 /* ENavigationController.swift */; };
 		5729333028A124F500501B30 /* EViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729332F28A124F500501B30 /* EViewController.swift */; };
 		575AA4E228AA1AAF00CBF1A2 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575AA4E128AA1AAF00CBF1A2 /* ProgressViewController.swift */; };
+		5761318F29AF4CED007E1D65 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B422A629A7353600A83CAD /* TextViewController.swift */; };
 		5771F5F0296DB16100F63C13 /* DVTFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 5771F5EF296DB16100F63C13 /* DVTFoundation */; };
 		5771F5F2296DB16B00F63C13 /* DVTLoger in Frameworks */ = {isa = PBXBuildFile; productRef = 5771F5F1296DB16B00F63C13 /* DVTLoger */; };
 		5771F5F4296DB16B00F63C13 /* DVTNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 5771F5F3296DB16B00F63C13 /* DVTNetwork */; };
@@ -45,6 +46,7 @@
 		5EBA4BD826F8C48D0038005B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD726F8C48D0038005B /* Assets.xcassets */; };
 		5EBA4BE926F8C5580038005B /* Dastower.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BE826F8C5570038005B /* Dastower.gpx */; };
 		5EBA4BEF26F8C6D40038005B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBA4BEE26F8C6D40038005B /* LaunchScreen.storyboard */; };
+		F3C74298E1E5188571BA82B3 /* Pods_ExamplePod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A60F7742453FD674B4BCDC /* Pods_ExamplePod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		19D708A93D17401D53E581F7 /* Pods-ExamplePod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamplePod.release.xcconfig"; path = "Target Support Files/Pods-ExamplePod/Pods-ExamplePod.release.xcconfig"; sourceTree = "<group>"; };
+		35A60F7742453FD674B4BCDC /* Pods_ExamplePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamplePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5717FB26283CC551007C236C /* Example.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Example.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5729332D28A1235B00501B30 /* ENavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENavigationController.swift; sourceTree = "<group>"; };
 		5729332F28A124F500501B30 /* EViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C74298E1E5188571BA82B3 /* Pods_ExamplePod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				575337B7292F41B700D01B5B /* UniformTypeIdentifiers.framework */,
+				35A60F7742453FD674B4BCDC /* Pods_ExamplePod.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -235,12 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5771F628296DB39700F63C13 /* Build configuration list for PBXNativeTarget "ExamplePod" */;
 			buildPhases = (
+				5730EDF9298BF58B00D89748 /* [CP] Check Pods Manifest.lock */,
 				5771F60D296DB39700F63C13 /* Sources */,
 				5771F618296DB39700F63C13 /* Frameworks */,
 				5771F622296DB39700F63C13 /* Resources */,
 				5771F627296DB39700F63C13 /* Embed Foundation Extensions */,
 				5730EDF6298BF4D900D89748 /* [CP] Embed Pods Frameworks */,
-				5730EDF9298BF58B00D89748 /* [CP] Check Pods Manifest.lock */,
 			);
 			buildRules = (
 			);
@@ -374,13 +379,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ExamplePod/Pods-ExamplePod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -415,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5761318F29AF4CED007E1D65 /* TextViewController.swift in Sources */,
 				57B46DF3298A523A00802AF6 /* TipsViewController.swift in Sources */,
 				5771F60E296DB39700F63C13 /* ButtonViewController.swift in Sources */,
 				5771F60F296DB39700F63C13 /* ViewController.swift in Sources */,

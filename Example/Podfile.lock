@@ -1,54 +1,67 @@
 PODS:
   - Alamofire (5.6.4)
-  - DVTFoundation (2.0.6)
-  - DVTLoger (2.0.3):
+  - DVTFoundation (2.0.0)
+  - DVTLoger (2.0.0):
     - Zip (~> 2.1.2)
-  - DVTNetwork (2.0.3):
+  - DVTNetwork (2.0.0):
     - Alamofire (~> 5.6.0)
     - DVTLoger (~> 2.0.0)
   - DVTObjectMapper (14.0.0)
-  - DVTScan (2.1.0):
-    - DVTUIKit/Extension (~> 2.1.0)
-  - DVTSecurity (2.0.1)
-  - DVTUIKit (2.1.2):
-    - DVTUIKit/Advanced (= 2.1.2)
-    - DVTUIKit/Extension (= 2.1.2)
-  - DVTUIKit/Advanced (2.1.2):
-    - DVTUIKit/Advanced/Button (= 2.1.2)
-    - DVTUIKit/Advanced/Collection (= 2.1.2)
-    - DVTUIKit/Advanced/EmptyView (= 2.1.2)
-    - DVTUIKit/Advanced/Label (= 2.1.2)
-    - DVTUIKit/Advanced/Navigation (= 2.1.2)
-    - DVTUIKit/Advanced/Progress (= 2.1.2)
-    - DVTUIKit/Advanced/Public (= 2.1.2)
-    - DVTUIKit/Advanced/TextField (= 2.1.2)
-    - DVTUIKit/Advanced/TextView (= 2.1.2)
-    - DVTUIKit/Advanced/Tips (= 2.1.2)
-  - DVTUIKit/Advanced/Button (2.1.2):
+  - DVTScan (2.0.0):
+    - DVTUIKit/Extension (~> 2.0.0)
+  - DVTSecurity (2.0.0)
+  - DVTUIKit (2.0.1):
+    - DVTUIKit/Advanced (= 2.0.1)
+    - DVTUIKit/Extension (= 2.0.1)
+  - DVTUIKit/Advanced (2.0.1):
+    - DVTUIKit/Advanced/Alert (= 2.0.1)
+    - DVTUIKit/Advanced/Badge (= 2.0.1)
+    - DVTUIKit/Advanced/Button (= 2.0.1)
+    - DVTUIKit/Advanced/Collection (= 2.0.1)
+    - DVTUIKit/Advanced/EmptyView (= 2.0.1)
+    - DVTUIKit/Advanced/Label (= 2.0.1)
+    - DVTUIKit/Advanced/ModalPresentation (= 2.0.1)
+    - DVTUIKit/Advanced/MoreOperation (= 2.0.1)
+    - DVTUIKit/Advanced/Navigation (= 2.0.1)
+    - DVTUIKit/Advanced/Progress (= 2.0.1)
+    - DVTUIKit/Advanced/Public (= 2.0.1)
+    - DVTUIKit/Advanced/TextField (= 2.0.1)
+    - DVTUIKit/Advanced/TextView (= 2.0.1)
+    - DVTUIKit/Advanced/Tips (= 2.0.1)
+  - DVTUIKit/Advanced/Alert (2.0.1):
+    - DVTUIKit/Advanced/ModalPresentation
+  - DVTUIKit/Advanced/Badge (2.0.1):
+    - DVTUIKit/Advanced/Label
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Collection (2.1.2):
+  - DVTUIKit/Advanced/Button (2.0.1):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/EmptyView (2.1.2):
+  - DVTUIKit/Advanced/Collection (2.0.1):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Label (2.1.2):
-    - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Navigation (2.1.2):
-    - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Progress (2.1.2):
+  - DVTUIKit/Advanced/EmptyView (2.0.1):
     - DVTUIKit/Advanced/Public
+  - DVTUIKit/Advanced/Label (2.0.1):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Public (2.1.2)
-  - DVTUIKit/Advanced/TextField (2.1.2):
+  - DVTUIKit/Advanced/ModalPresentation (2.0.1):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/TextView (2.1.2):
+  - DVTUIKit/Advanced/MoreOperation (2.0.1):
+    - DVTUIKit/Advanced/ModalPresentation
+  - DVTUIKit/Advanced/Navigation (2.0.1):
     - DVTUIKit/Extension
-  - DVTUIKit/Advanced/Tips (2.1.2):
+  - DVTUIKit/Advanced/Progress (2.0.1):
     - DVTUIKit/Advanced/Public
+  - DVTUIKit/Advanced/Public (2.0.1):
     - DVTUIKit/Extension
-  - DVTUIKit/Extension (2.1.2):
-    - DVTFoundation (~> 2.0.6)
-    - DVTLoger
+  - DVTUIKit/Advanced/TextField (2.0.1):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/TextView (2.0.1):
+    - DVTUIKit/Extension
+  - DVTUIKit/Advanced/Tips (2.0.1):
+    - DVTUIKit/Advanced/Public
+  - DVTUIKit/Extension (2.0.1):
+    - DVTFoundation (~> 2.0.0)
+    - DVTLoger (~> 2.0.0)
   - SnapKit (5.6.0)
+  - WechatOpenSDK-XCFramework (2.0.1)
   - Zip (2.1.2)
 
 DEPENDENCIES:
@@ -60,11 +73,13 @@ DEPENDENCIES:
   - DVTSecurity (from `../DVTSecurity`)
   - DVTUIKit (from `../DVTUIKit`)
   - SnapKit
+  - WechatOpenSDK-XCFramework
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - SnapKit
+    - WechatOpenSDK-XCFramework
     - Zip
 
 EXTERNAL SOURCES:
@@ -85,16 +100,17 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  DVTFoundation: 6002f0290037246089e18477c2867ec8c8d1a378
-  DVTLoger: 8228829e5b8ca08c49bcfcbc5d0ba5500a5dcf06
-  DVTNetwork: c7897a183b8cca27c74efbb7a35d6eb8edf02133
+  DVTFoundation: 18d1ceea10ed10c633a73f62f0add9130b84e5fd
+  DVTLoger: b63b9a021af3eb8b8231fbadb9924769e115f6e6
+  DVTNetwork: 5852da0d2efff5f0019665bf16df74c45704d6e6
   DVTObjectMapper: 0eee5f062d02b246b338917cb4796fece539e8cc
-  DVTScan: bbab396eef41833e3b8e38b7b08a805543cc8d18
-  DVTSecurity: dc3556dfd93ad18fef1582d1a5595608449f7921
-  DVTUIKit: 5115b344c79f6add355e505443ee0a622fc4ac4e
+  DVTScan: 72ddb3e230fb3b6789027ce19fa6bb8950b32608
+  DVTSecurity: 262967217cb0293bd6d60118a018b629b016d725
+  DVTUIKit: 99053622b478e726051b9f15169873fb6f505f6c
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  WechatOpenSDK-XCFramework: 79b85a56c364e57d4081d16893940c9478057cac
   Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
 
-PODFILE CHECKSUM: 0567bde6379291867bc66ee1c42d203674b99a9b
+PODFILE CHECKSUM: 2e0193f6ad7f0f9ae4a53cec9a66691d050f3f13
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0

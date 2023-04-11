@@ -8,6 +8,7 @@
 import UIKit
 
 class EViewController: UIViewController {
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(dvt: "0xf8f8f8")
@@ -16,4 +17,7 @@ class EViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+
+    // MARK: Private
+    private var test:String = ""
 }

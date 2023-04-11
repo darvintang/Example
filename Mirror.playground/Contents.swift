@@ -1,3 +1,7 @@
+//
+//  sourcecode.swift
+//
+
 import UIKit
 
 protocol MirrorValue {
@@ -8,8 +12,31 @@ extension MirrorValue {
     var value: Any? {
         return self
     }
+
+    func foo() {
+        // foo
+    }
 }
 
+switch foo {
+    case bar: break
+    case baz: break
+}
+
+let h = """
+    1dasdas
+    dasdasda
+    dasda
+    sd
+    as
+    das
+    d
+    asd
+    as
+    d
+    """
+
+// MARK: -
 extension NSObject: MirrorValue {
     var value: Any? {
         var dict: [String: Any] = [:]
@@ -27,6 +54,16 @@ extension NSObject: MirrorValue {
     }
 }
 
+if case let .foo(bar, baz) = quux {
+    // inner foo
+}
+
+(let foo, let bar) = baz()
+
+public extension T{
+    func text(){ }
+}
+
 class T: NSObject {
     var h: Int32 = 123
     var a = "123"
@@ -36,6 +73,7 @@ class T: NSObject {
 class B: NSObject {
     var t = T()
     var list = [T(), T()]
+
     var dict = ["b123": T(), "a123123": 31231] as [String: Any]
 }
 
@@ -62,6 +100,7 @@ extension Dictionary: MirrorValue {
     }
 }
 
-if let value = B().value, let data = try? JSONSerialization.data(withJSONObject: value, options: .fragmentsAllowed) {
+if let value = B().value, let data = try? JSONSerialization.data(withJSONObject: value, options: .fragmentsAllowed)
+{
     print(String(data: data, encoding: .utf8) ?? "")
 }

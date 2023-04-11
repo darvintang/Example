@@ -6,8 +6,12 @@
 //  Copyright © 2023 cn.tcoding.dvt. All rights reserved.
 //
 
-import SnapKit
 import UIKit
+import SnapKit
+
+#if canImport(DVTUIKit_Pasteboard)
+    import DVTUIKit_Pasteboard
+#endif
 
 #if canImport(DVTUIKit_TextField)
     import DVTUIKit_TextField
@@ -22,25 +26,11 @@ import UIKit
 #endif
 
 class TextViewController: EViewController {
-    lazy var inputBoxView: DVTUITextField = {
-        let textField = DVTUITextField()
-
-        textField.placeholder = "请输入"
-        textField.borderStyle = .roundedRect
-        textField.maximumLength = 10
-        textField.clearButtonMode = .whileEditing
-        return textField
-    }()
-
-    lazy var textBoxView: DVTUITextView = {
-        let textView = DVTUITextView()
-        textView.placeholder = "请输入"
-        textView.font = .dvt.regular(of: 14)
-        return textView
-    }()
-
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+//        UIPasteboard.dvt.allowRead = true
+//        print(UIPasteboard.dvt.general.string)
 
         self.title = "输入框"
         self.view.addSubview(self.inputBoxView)
@@ -60,4 +50,21 @@ class TextViewController: EViewController {
             make.right.equalToSuperview().offset(-12)
         }
     }
+
+    // MARK: Internal
+    lazy var inputBoxView: DVTUITextField = {
+        let textField = DVTUITextField()
+        textField.placeholder = "请输入"
+        textField.borderStyle = .roundedRect
+        textField.maximumLength = 10
+        textField.clearButtonMode = .whileEditing
+        return textField
+    }()
+
+    lazy var textBoxView: DVTUITextView = {
+        let textView = DVTUITextView()
+        textView.placeholder = "请输入"
+        textView.font = .dvt.regular(of: 14)
+        return textView
+    }()
 }

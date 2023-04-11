@@ -5,20 +5,18 @@
 //  Created by darvin on 2021/9/20.
 //
 
-import DVTLoger
-import DVTSecurity
 import UIKit
-
-import MatterSupport
-
+import DVTLoger
 import DVTUIKit
+import DVTSecurity
 
 #if canImport(DVTUIKit_Navigation)
-    import DVTUIKit_Navigation
     import DVTUIKit_Public
+    import DVTUIKit_Extension
+    import DVTUIKit_Navigation
 #endif
 
-// 日志
+/// 日志
 let eLoger = {
     let loger = Loger("Test")
     loger.logExpire = 3600 * 24 * 7 // 七天有效时间
@@ -36,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DVTUINavigationBarStyle.default.dvt_navigationBarBackTitle = ""
         DVTUINavigationBarStyle.default.dvt_navigationBarShadowColor = .clear
         DVTKeyboardManager.default.test()
+        DVTUIKitConfig.beginHook()
 
         return true
     }
@@ -56,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
-    // App处于前台时收到通知
+    /// App处于前台时收到通知
     public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         if #available(iOS 14.0, *) {
             completionHandler([.banner, .list])
@@ -65,7 +64,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         }
     }
 
-    // 触发通知动作时回调
+    /// 触发通知动作时回调
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         completionHandler()
     }

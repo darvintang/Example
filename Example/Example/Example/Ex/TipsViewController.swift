@@ -8,8 +8,8 @@
 
 import UIKit
 
-#if canImport(DVTUIKit_)
-    import DVTUIKit_
+#if canImport(DVTUIKit)
+    import DVTUIKit
 #endif
 
 #if canImport(DVTUIKit_Tips)
@@ -17,39 +17,11 @@ import UIKit
 #endif
 
 class TipsViewController: EViewController {
-    lazy var loadingView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .dvt.random
-        return view
-    }()
-
-    lazy var infoView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .dvt.random
-        return view
-    }()
-
-    lazy var errorView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .dvt.random
-        return view
-    }()
-
-    lazy var successView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .dvt.random
-        return view
-    }()
-
-    lazy var textView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .dvt.random
-        return view
-    }()
-
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "提示"
+        self.t = Test()
 
         self.view.addSubview(self.loadingView)
         self.view.addSubview(self.infoView)
@@ -89,8 +61,9 @@ class TipsViewController: EViewController {
         self.loadingView.dvt.addTapGesture { view in
             view.dvt.showLoading(style: DVTUITipsStyle(timeout: 5))
         }
-        self.infoView.dvt.addTapGesture { view in
+        self.infoView.dvt.addTapGesture { [weak self] view in
             view.dvt.showInfo("信息")
+            self?.t?.update()
         }
         self.errorView.dvt.addTapGesture { view in
             view.dvt.showError("失败")
@@ -101,5 +74,50 @@ class TipsViewController: EViewController {
         self.textView.dvt.addTapGesture { view in
             view.dvt.showText("测试")
         }
+    }
+
+    // MARK: Internal
+    lazy var loadingView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .dvt.random
+        return view
+    }()
+
+    lazy var infoView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .dvt.random
+        return view
+    }()
+
+    lazy var errorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .dvt.random
+        return view
+    }()
+
+    lazy var successView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .dvt.random
+        return view
+    }()
+
+    lazy var textView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .dvt.random
+        return view
+    }()
+
+    var t: Test? {
+        didSet {
+            eLoger.debug("修改属性t")
+        }
+    }
+}
+
+struct Test {
+    private(set) var age = 1
+
+    mutating func update() {
+        self.age += 1
     }
 }

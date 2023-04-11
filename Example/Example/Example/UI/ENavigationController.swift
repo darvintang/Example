@@ -8,7 +8,7 @@
 #if canImport(DVTUIKit_Navigation)
     import DVTUIKit_Navigation
 #elseif canImport(DVTUIKit)
-    import DVTUIKit_
+    import DVTUIKit
 #endif
 
 import UIKit

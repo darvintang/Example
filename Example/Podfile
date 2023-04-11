@@ -21,4 +21,5 @@ target 'ExamplePod' do
  pod 'DVTFoundation', :path => '../DVTFoundation'
  pod 'DVTSecurity', :path => '../DVTSecurity'
  pod 'DVTScan', :path => '../DVTScan'
+ pod 'WechatOpenSDK-XCFramework'
 end

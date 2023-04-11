@@ -1,0 +1,43 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "3851c5131e1a3a4d7237f1b1de0ff3e8a065c59cee3ebe1bb5c10d36f3911889"
+    }
+  ],
+  "containerPath" : "/Users/darvin/Desktop/DVTSwift/Example/QMUIKit.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/darvin/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/darvin/Library/Developer/Xcode/DerivedData/QMUIKit-acjqdkzzfqzdwocaqxxjjzoqdbpz/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/darvin/Library/Developer/Xcode/DerivedData/QMUIKit-acjqdkzzfqzdwocaqxxjjzoqdbpz/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
