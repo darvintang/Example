@@ -38,6 +38,7 @@
 		57B46DF3298A523A00802AF6 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B46DF2298A523A00802AF6 /* TipsViewController.swift */; };
 		57B46DF4298A523A00802AF6 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B46DF2298A523A00802AF6 /* TipsViewController.swift */; };
 		57D26E58289D0E9D0019A1A7 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */; };
+		57D9B95329ED16E700B7B72F /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D9B95229ED16E700B7B72F /* ImageViewController.swift */; };
 		57F389DE296BE67700FAD47F /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F389DD296BE67700FAD47F /* NavBarViewController.swift */; };
 		5EBA4BCF26F8C48B0038005B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BCE26F8C48B0038005B /* AppDelegate.swift */; };
 		5EBA4BD126F8C48B0038005B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBA4BD026F8C48B0038005B /* SceneDelegate.swift */; };
@@ -96,6 +97,7 @@
 		57B422A629A7353600A83CAD /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		57B46DF2298A523A00802AF6 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		57D26E57289D0E9D0019A1A7 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		57D9B95229ED16E700B7B72F /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		57EE097F287E96900099BA46 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		57F389DD296BE67700FAD47F /* NavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
 		5EBA4BCB26F8C48B0038005B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				57F389DD296BE67700FAD47F /* NavBarViewController.swift */,
 				57B46DF2298A523A00802AF6 /* TipsViewController.swift */,
 				57B422A629A7353600A83CAD /* TextViewController.swift */,
+				57D9B95229ED16E700B7B72F /* ImageViewController.swift */,
 			);
 			path = Ex;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				5729333028A124F500501B30 /* EViewController.swift in Sources */,
 				57F389DE296BE67700FAD47F /* NavBarViewController.swift in Sources */,
 				5729332E28A1235B00501B30 /* ENavigationController.swift in Sources */,
+				57D9B95329ED16E700B7B72F /* ImageViewController.swift in Sources */,
 				57B422A729A7353600A83CAD /* TextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

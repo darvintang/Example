@@ -41,6 +41,9 @@ class ViewController: EViewController {
         },
         "输入框": { [weak self] in
             self?.navigationController?.pushViewController(TextViewController(), animated: true)
+        },
+        "图片工具": { [weak self] in
+            self?.navigationController?.pushViewController(ImageViewController(), animated: true)
         }]
 
         self.tableView.frame = CGRect(x: 0, y: .dvt.navigationBarHeight, width: .dvt.screenWidth, height: .dvt.screenHeight - .dvt.navigationBarHeight)
